@@ -1,5 +1,7 @@
 import { useState, type ChangeEvent } from "react";
+import { useTeacherStore } from "../store/teachers";
 
+useTeacherStore;
 interface FormData {
   firstName: string;
   lastName: string;
@@ -9,7 +11,6 @@ interface FormData {
   address: string;
   subject: string;
 }
-
 function HomePage() {
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
@@ -30,6 +31,7 @@ function HomePage() {
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     console.log(formData);
+    console.log(import.meta.env.VITE_BACKEND_BASEURL as string);
   };
   return (
     <div className="formContainer">
