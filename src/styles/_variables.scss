@@ -1,0 +1,8 @@
+@use "sass:color";
+
+$primaryColor: #06257c;
+
+$primaryBackgroundColor: color.scale($primaryColor, $lightness: 10%);
+$primaryBorderColor: color.scale($primaryColor, $lightness: 40%);
+
+$primaryTextColor: color.scale($primaryColor, $lightness: 80%);

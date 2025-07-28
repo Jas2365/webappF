@@ -2,17 +2,12 @@ body {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .formContainer {
@@ -25,11 +20,11 @@ body {
   text-align: center;
   margin: auto;
   margin-top: 20px;
+  color: rgb(182.5076923077, 200.6307692308, 251.4923076923);
 }
 .formContainer h1 {
   font-size: x-large;
   text-align: center;
-  color: #c4c4c4;
 }
 .formContainer label {
   font-size: 15px;
@@ -38,19 +33,27 @@ body {
   margin-top: 8px;
   margin-bottom: 5px;
   text-align: left;
-  color: #c5c2c2;
   font-weight: bold;
 }
 .formContainer input {
   display: block;
-  background-color: #274f70;
-  color: #c5c2c2;
+  background-color: rgb(7.7538461538, 47.8153846154, 160.2461538462);
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
-  border: 1px solid #666;
+  border: 1px solid rgb(37.5230769231, 91.8923076923, 244.4769230769);
   border-radius: 3px;
   font-size: 12px;
+}
+.formContainer input:active {
+  outline: none;
+  background-color: rgb(7.7538461538, 47.8153846154, 160.2461538462);
+  color: rgb(182.5076923077, 200.6307692308, 251.4923076923);
+}
+.formContainer input:focus {
+  outline: none;
+  background-color: rgb(7.7538461538, 47.8153846154, 160.2461538462);
+  color: rgb(182.5076923077, 200.6307692308, 251.4923076923);
 }
 .formContainer select {
   display: block;
@@ -58,20 +61,31 @@ body {
   margin-bottom: 15px;
   padding: 10px;
   box-sizing: border-box;
-  background-color: #274f70;
-  border: 1px solid #777;
+  background-color: rgb(7.7538461538, 47.8153846154, 160.2461538462);
+  border: 1px solid rgb(37.5230769231, 91.8923076923, 244.4769230769);
   border-radius: 5px;
+  color: rgb(182.5076923077, 200.6307692308, 251.4923076923);
+}
+.formContainer select:focus {
+  outline: none;
+  background-color: rgb(7.7538461538, 47.8153846154, 160.2461538462);
+  color: rgb(182.5076923077, 200.6307692308, 251.4923076923);
 }
 .formContainer button {
   padding: 10px 15px;
   border-radius: 6px;
   margin: 15px;
   border: none;
-  color: #214094;
+  color: rgb(182.5076923077, 200.6307692308, 251.4923076923);
+  background-color: rgb(37.5230769231, 91.8923076923, 244.4769230769);
   width: 45%;
   font-size: 16px;
 }
 .formContainer button:hover {
-  background-color: #2b54c4;
-  color: #c4c4c4;
+  background-color: rgb(7.7538461538, 47.8153846154, 160.2461538462);
+  color: rgb(182.5076923077, 200.6307692308, 251.4923076923);
+}
+.formContainer button:active {
+  background-color: rgb(7.7538461538, 47.8153846154, 160.2461538462);
+  color: rgb(182.5076923077, 200.6307692308, 251.4923076923);
 }/*# sourceMappingURL=style.css.map */
