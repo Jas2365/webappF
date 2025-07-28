@@ -14,7 +14,7 @@ dist-ssr
 
 # envs 
 .env
-vite-env.d.ts
+/src/vite-env.d.ts
 
 # Editor directories and files
 .vscode/*
