@@ -42,6 +42,10 @@ export const useTeacherStore = create<TeacherStore>((set) => ({
       body: JSON.stringify(newTeacher),
     });
 
+    ////
+    /// test
+    ///
+
     const data = await res.json();
 
     set((state) => ({ teachers: [...state.teachers, data.data] }));
