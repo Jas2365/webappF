@@ -1,4 +1,5 @@
 import { useState, type ChangeEvent } from "react";
+import { useTeacherStore } from "../store/teachers";
 
 interface FormData {
   firstName: string;
@@ -9,7 +10,7 @@ interface FormData {
   address: string;
   subject: string;
 }
-
+useTeacherStore;
 function HomePage() {
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
