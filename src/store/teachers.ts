@@ -54,6 +54,7 @@ export const useTeacherStore = create<TeacherStore>((set) => ({
   },
   updateTeacher: async (pid) => {
     pid;
+    pid;
     return { success: true, message: "none" };
   },
 }));
